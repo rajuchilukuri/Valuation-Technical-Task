@@ -21,7 +21,6 @@ public class Hooks extends Driver {
         driver.get(FileReaderManager.getInstance().getConfigFileReader().getUrl());
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().getImplicitWaitTimeout();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }
